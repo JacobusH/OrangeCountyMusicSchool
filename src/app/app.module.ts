@@ -11,6 +11,12 @@ import { HomeComponent } from './home/home.component';
 import { AlertModule } from 'ngx-bootstrap';
 import { AnnouncementsComponent } from './announcements/announcements.component';
 import { MailingListComponent } from './mailing-list/mailing-list.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { TeachersComponent } from './teachers/teachers.component';
+import { FAQComponent } from './faq/faq.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { ResourcesComponent } from './resources/resources.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +24,13 @@ import { MailingListComponent } from './mailing-list/mailing-list.component';
     AboutComponent,
     HomeComponent,
     AnnouncementsComponent,
-    MailingListComponent
+    MailingListComponent,
+    GalleryComponent,
+    TeachersComponent,
+    FAQComponent,
+    TestimonialsComponent,
+    ResourcesComponent,
+    ContactComponent
   ],
   imports: [
     AlertModule.forRoot(),
