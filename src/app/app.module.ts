@@ -1,12 +1,17 @@
+import { AngularFireModule } from 'angularfire2';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import {RouterModule, Routes} from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
+
+// providers
+import {AF} from './providers/af';
 
 import { AlertModule } from 'ngx-bootstrap';
 import { AnnouncementsComponent } from './announcements/announcements.component';
@@ -17,6 +22,25 @@ import { FAQComponent } from './faq/faq.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { ContactComponent } from './contact/contact.component';
+import { HomeMessageComponent } from './home-message/home-message.component';
+import { HomeVideoComponent } from './home-video/home-video.component';
+import { HomeInstrumentListComponent } from './home-instrument-list/home-instrument-list.component';
+import { TestimonialsCreateComponent } from './testimonials-create/testimonials-create.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+
+export const firebaseConfig = {
+  apiKey: 'AIzaSyCFToauOWTjn55Oc2e6L1YkCt5ZGzbMXV8',
+  authDomain: 'ocmusicschool-11817.firebaseapp.com',
+  databaseURL: 'https://ocmusicschool-11817.firebaseio.com',
+  storageBucket: 'ocmusicschool-11817.appspot.com',
+  messagingSenderId: '202663817255'
+};
+
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'login', component: LoginPageComponent }
+];
+
 
 @NgModule({
   declarations: [
@@ -30,16 +54,23 @@ import { ContactComponent } from './contact/contact.component';
     FAQComponent,
     TestimonialsComponent,
     ResourcesComponent,
-    ContactComponent
+    ContactComponent,
+    HomeMessageComponent,
+    HomeVideoComponent,
+    HomeInstrumentListComponent,
+    TestimonialsCreateComponent,
+    LoginPageComponent
   ],
   imports: [
     AlertModule.forRoot(),
+    AngularFireModule.initializeApp(firebaseConfig),
     BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [AF],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
