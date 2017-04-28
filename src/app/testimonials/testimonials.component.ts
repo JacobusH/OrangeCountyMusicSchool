@@ -23,19 +23,4 @@ export class TestimonialsComponent implements OnInit {
     this.afService.sendMessage(this.newMessage);
   }
 
-
-  // isYou(email) {
-  //   if (email == this.afService.email) {
-  //     return true;
-  //   }
-  //   else
-  //     return false;
-  // }
-  // isMe (email) {
-  //   if(email == this.afService.email)
-  //     return false;
-  //   else
-  //     return true;
-  // }
-
 }

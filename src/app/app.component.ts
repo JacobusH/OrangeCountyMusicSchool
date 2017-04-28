@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 
 export class AppComponent {
   public isLoggedIn: boolean;
+  public displayName: string;
 
   title = 'app works!';
 
@@ -29,6 +30,8 @@ export class AppComponent {
          // set display name and email
          this.afService.displayName = auth.google.displayName;
          this.afService.email = auth.google.email;
+
+         this.displayName = auth.google.displayName;
 
          this.isLoggedIn = true;
        }

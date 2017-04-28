@@ -4,12 +4,21 @@ import {AngularFire, AuthProviders, AuthMethods, FirebaseListObservable} from 'a
 @Injectable()
 export class AF {
   public messages: FirebaseListObservable<any>;
+  public announcements: FirebaseListObservable<any>;
   public users: FirebaseListObservable<any>;
   public displayName: string;
   public email: string;
 
+  private currentDate: string;
+
   constructor(public af: AngularFire) {
       this.messages = this.af.database.list('messages');
+      this.announcements = this.af.database.list('announcements');
+  }
+
+  getCurrentDate() {
+    const dt = new Date(Date.now());
+    return dt.getFullYear() + '/' + (dt.getMonth() + 1) + '/' + dt.getDate();
   }
 
   /**
@@ -39,9 +48,21 @@ export class AF {
       message: text,
       displayName: this.displayName,
       email: this.email,
-      timestamp: Date.now()
+      timestamp: this.getCurrentDate()
     };
     this.messages.push(message);
+  }
+
+  /**
+   * Saves an announcment to the Firebase Realtime Database
+   * @param text
+   */
+  saveAnnouncement(text) {
+    const announcement = {
+      announcement: text,
+      timestamp: this.getCurrentDate()
+    };
+    this.announcements.push(announcement);
   }
 
 }

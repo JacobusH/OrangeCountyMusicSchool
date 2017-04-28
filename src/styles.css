@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
+/**********************
+** GLOBAL LAYOUT
+**********************/
 * {
     font-family: 'Raleway';
 }
@@ -31,4 +34,12 @@ button {
 {
     position:absolute;
     bottom:0;
+}
+
+/**********************
+** HELPERS
+**********************/
+.IL
+{
+    display:inline-block;
 }
