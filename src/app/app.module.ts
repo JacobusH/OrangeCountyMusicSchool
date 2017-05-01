@@ -38,7 +38,15 @@ export const firebaseConfig = {
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'login', component: LoginPageComponent }
+  { path: 'login', component: LoginPageComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'gallery', component: GalleryComponent },
+  { path: 'teachers', component: TeachersComponent },
+  { path: 'faq', component: FAQComponent },
+  { path: 'testimonials', component: TestimonialsComponent },
+  { path: 'resources', component: ResourcesComponent },
+  { path: 'contact', component: ContactComponent }
 ];
 
 

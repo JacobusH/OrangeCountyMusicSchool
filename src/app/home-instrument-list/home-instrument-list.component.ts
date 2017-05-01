@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-home-instrument-list',
@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-instrument-list.component.css']
 })
 export class HomeInstrumentListComponent implements OnInit {
+  @Output()
+  instrument: EventEmitter<string> = new EventEmitter<string>();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onClick(instrument: string) {
+    this.instrument.emit(instrument);
   }
 
 }

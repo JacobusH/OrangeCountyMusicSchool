@@ -1,5 +1,48 @@
+h3
+{
+  text-align: center;
+}
+
 .component {
   border: 1px solid blue;
   padding: 5px;
   display:block; 
+}
+
+.home-img-container
+{
+  position:relative;
+  display: table;
+  background: url('../../assets/photos/fullpiano.jpg') no-repeat top center ;
+  width:100%;
+  opacity: .6;
+  height:530px;
+  max-height:530px;
+  background-size: 100% auto;
+}
+
+.overlay
+{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.overlay h1.home-img-title
+{
+  text-align: center;
+  color: red;
+  font-size: 165%;
+  font-weight: lighter;
+  line-height: 2;
+  padding: 0 10%;
+}
+
+h3.home-img-text
+{
+  text-align: center;
+  color: red;
+  font-size: 165%;
+  font-weight: lighter;
+  line-height: 2;
+  padding: 0 10%;
 }
