@@ -16,7 +16,8 @@ html
 body
 {
     margin-top:51px;
-    padding:10px;
+    margin-bottom:45px;
+    /*padding:10px;*/
 }
 
 button {
@@ -34,7 +35,10 @@ button {
 {
     position:absolute;
     bottom:0;
+    height:45px;
+    width:100%;
 }
+
 
 /**********************
 ** HELPERS

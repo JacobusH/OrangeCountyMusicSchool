@@ -1,8 +1,9 @@
 <h3>Try lessons with some of our popular musical instruments</h3>
 
+<div class="container">
 <div class="row">
-  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <div class="tile-container" onClick="('Piano')">
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+    <div class="tile-container" (click)="onClick('Piano')">
       <div class="tile-img">
         <img src="../../assets/photos/piano.jpg" />
       </div>
@@ -10,7 +11,9 @@
         <span>Piano</span>
       </div>
     </div>
-    <div class="tile-container" onClick="('Guitar')">
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+    <div class="tile-container" (click)="onClick('Guitar')">
       <div class="tile-img">
         <img src="../../assets/photos/guitar.jpg" />
       </div>
@@ -18,7 +21,9 @@
         <span>Guitar</span>
       </div>
     </div>
-    <div class="tile-container" onClick="('Violin')">
+  </div>
+   <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+    <div class="tile-container" (click)="onClick('Violin')">
       <div class="tile-img">
         <img src="../../assets/photos/violin.jpg" />
       </div>
@@ -26,7 +31,9 @@
         <span>Violin</span>
       </div>
     </div>
-    <div class="tile-container" onClick="('Flute')">
+  </div>
+   <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+     <div class="tile-container" (click)="onClick('Flute')">
       <div class="tile-img">
         <img src="../../assets/photos/flute.jpg" />
       </div>
@@ -34,7 +41,9 @@
         <span>Flute</span>
       </div>
     </div>
-    <div class="tile-container" onClick="('Clarinet')">
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+    <div class="tile-container" (click)="onClick('Clarinet')">
       <div class="tile-img">
         <img src="../../assets/photos/clarinet.jpg" />
       </div>
@@ -42,7 +51,9 @@
         <span>Clarinet</span>
       </div>
     </div>
-    <div class="tile-container" onClick="('Saxophone')">
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+    <div class="tile-container" (click)="onClick('Saxophone')">
       <div class="tile-img">
         <img src="../../assets/photos/saxophone.jpg" />
       </div>
@@ -51,10 +62,8 @@
       </div>
     </div>
   </div>
-</div>
-<div class="row">
-  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <div class="tile-container" onClick="('Trumpet')">
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+    <div class="tile-container" (click)="onClick('Trumpet')">
       <div class="tile-img">
         <img src="../../assets/photos/trumpet.jpg" />
       </div>
@@ -62,7 +71,9 @@
         <span>Trumpet</span>
       </div>
     </div>
-    <div class="tile-container" onClick="('Viola')">
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+    <div class="tile-container" (click)="onClick('Viola')">
       <div class="tile-img">
         <img src="../../assets/photos/viola.jpg" />
       </div>
@@ -70,7 +81,9 @@
         <span>Viola</span>
       </div>
     </div>
-    <div class="tile-container" onClick="('Trombone')">
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+    <div class="tile-container" (click)="onClick('Trombone')">
       <div class="tile-img">
         <img src="../../assets/photos/trombone.jpg" />
       </div>
@@ -78,7 +91,9 @@
         <span>Trombone</span>
       </div>
     </div>
-    <div class="tile-container" onClick="('Cello')">
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+    <div class="tile-container" (click)="onClick('Cello')">
       <div class="tile-img">
         <img src="../../assets/photos/cello.jpg" />
       </div>
@@ -86,7 +101,9 @@
         <span>Cello</span>
       </div>
     </div>
-    <div class="tile-container" onClick="('Percussion')">
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+    <div class="tile-container" (click)="onClick('Percussion')">
       <div class="tile-img">
         <img src="../../assets/photos/percussion.jpg" />
       </div>
@@ -94,7 +111,9 @@
         <span>Percussion</span>
       </div>
     </div>
-    <div class="tile-container" onClick="('Double Bass')">
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+    <div class="tile-container" (click)="onClick('Double Bass')">
       <div class="tile-img">
         <img src="../../assets/photos/doublebass.jpg" />
       </div>
@@ -104,9 +123,11 @@
     </div>
   </div>
 </div>
+</div>
+
 <br/>
-<div class="row">
-  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="row" style="text-align: center">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" (click)="onClick('Tell us what you\'d like to play!')">
     <p>Other instruments available on request.</p>
   </div>
 </div>

@@ -1,5 +1,6 @@
 <h3>Join Our School!</h3>
 
+<div class="container">
  <form (ngSubmit)="onSubmit()" #mailingForm="ngForm">
      <div class="form-group">
         <label for="emailAddress">Email Address</label>
@@ -48,3 +49,4 @@
       </div>
       <button type="submit" class="btn btn-success" [disabled]="!mailingForm.form.valid">Submit</button>
     </form>
+  </div>

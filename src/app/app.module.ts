@@ -40,6 +40,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: LoginPageComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'home/:id', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'teachers', component: TeachersComponent },
