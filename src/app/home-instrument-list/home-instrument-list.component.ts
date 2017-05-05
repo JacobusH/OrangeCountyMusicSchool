@@ -11,7 +11,7 @@ export class HomeInstrumentListComponent implements OnInit {
   @Output()
   instrument: EventEmitter<string> = new EventEmitter<string>();
 
-  
+
 
   constructor(private route: ActivatedRoute, private router: Router) { }
 
